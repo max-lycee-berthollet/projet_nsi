@@ -33,4 +33,4 @@ labyrinthe ="""
 |*_|______|__|  ___|____|
 """
 print(labyrinthe)
-
+mvt = input('')
