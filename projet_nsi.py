@@ -8,8 +8,16 @@ intro=("""\nBienvenu dans le jeu du labyrinthe, les règles sont simples:
 Et voila vous connaissez les bases du jeu, à vous de prendre les bonnes descisions.
 """)
 print(intro)
-difficulte=input("quelle difficule vous correspond ? facile/difficile ")
-
+difficulte=input("quelle difficulte vous correspond ? facile/difficile ")
+seconds = time.time()
+if difficulte == 'facile':
+    while seconds < 360:
+        print(seconds)
+        time.sleep(15)
+else:
+    while seconds < 240:
+        print(seconds)
+        time.sleep(15)
 
 labyrinthe ="""
  _______ x _____________
