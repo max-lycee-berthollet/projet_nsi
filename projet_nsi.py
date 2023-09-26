@@ -9,10 +9,6 @@ Et voila vous connaissez les bases du jeu, à vous de prendre les bonnes descisi
 """)
 print(intro)
 difficulte=input("quelle difficule vous correspond ? facile/difficile ")
-if difficulte=="facile":
-    rtr
-elif difficulte=="difficile":
-    hij
 
 
 labyrinthe ="""
