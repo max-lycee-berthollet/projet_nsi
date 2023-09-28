@@ -114,22 +114,118 @@ while True:
         print(t9)
         print(t10)
         print(t11)
-    if py==4:
+    if py==5:
         print(t1)
         print(t2)
         print(t3)
-        for i in range(len(t4)):
+        print(t4)
+        for i in range(len(t5)):
             if i==px:
                 print("x",end="")
             else:
                 print(t4[i], end="")
-        print(t5)
         print(t6)
         print(t7)
         print(t8)
         print(t9)
         print(t10)
         print(t11)
+    if py==6:
+        print(t1)
+        print(t2)
+        print(t3)
+        print(t4)
+        print(t5)
+        for i in range(len(t6)):
+            if i==px:
+                print("x",end="")
+            else:
+                print(t4[i], end="")
+        print(t7)
+        print(t8)
+        print(t9)
+        print(t10)
+        print(t11)
+    if py==7:
+        print(t1)
+        print(t2)
+        print(t3)
+        print(t4)
+        print(t5)
+        print(t6)
+        for i in range(len(t7)):
+            if i==px:
+                print("x",end="")
+            else:
+                print(t4[i], end="")
+        print(t8)
+        print(t9)
+        print(t10)
+        print(t11)
+    if py==8:
+        print(t1)
+        print(t2)
+        print(t3)
+        print(t4)
+        print(t5)
+        print(t6)
+        print(t7)
+        for i in range(len(t8)):
+            if i==px:
+                print("x",end="")
+            else:
+                print(t4[i], end="")
+        print(t9)
+        print(t10)
+        print(t11)
+    if py==9:
+        print(t1)
+        print(t2)
+        print(t3)
+        print(t4)
+        print(t5)
+        print(t6)
+        print(t7)
+        print(t8)
+        for i in range(len(t9)):
+            if i==px:
+                print("x",end="")
+            else:
+                print(t4[i], end="")
+        print(t10)
+        print(t11)
+    if py==10:
+        print(t1)
+        print(t2)
+        print(t3)
+        print(t4)
+        print(t5)
+        print(t6)
+        print(t7)
+        print(t8)
+        print(t9)
+        for i in range(len(t10)):
+            if i==px:
+                print("x",end="")
+            else:
+                print(t4[i], end="")
+        print(t11)
+    if py==11:
+        print(t1)
+        print(t2)
+        print(t3)
+        print(t4)
+        print(t5)
+        print(t6)
+        print(t7)
+        print(t8)
+        print(t9)
+        print(t10)
+        for i in range(len(t11)):
+            if i==px:
+                print("x",end="")
+            else:
+                print(t4[i], end="")
     m=int(input("1.haur 2.bas 3.gauche 4.droite "))
     if m==1:
         py-=1
