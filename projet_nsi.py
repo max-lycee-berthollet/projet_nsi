@@ -48,7 +48,7 @@ labyrinthe ="""
 """
 print(labyrinthe)
 from math import *
-px= 5
+px= 4
 py= 1
 t1="@@    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 t2="@@              @@                         @@"
@@ -172,6 +172,8 @@ while True:
         for i in range(len(t4)):
             if i==px:
                 print("x", end="")
+            else:
+                print(t4[i], end="")
         print()
         print(t5)
         print(t6)
@@ -202,7 +204,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t5[i], end="")
         print()
         print(t6)
         print(t7)
@@ -233,7 +235,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t6[i], end="")
         print()
         print(t7)
         print(t8)
@@ -264,7 +266,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t7[i], end="")
         print()
         print(t8)
         print(t9)
@@ -295,7 +297,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t8[i], end="")
         print()
         print(t9)
         print(t10)
@@ -326,7 +328,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t9[i], end="")
         print()
         print(t10)
         print(t11)
@@ -357,7 +359,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t10[i], end="")
         print()
         print(t11)
         print(t12)
@@ -388,7 +390,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t11[i], end="")
         print()
         print(t12)
         print(t13)
@@ -419,7 +421,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t12[i], end="")
         print()
         print(t13)
         print(t14)
@@ -450,7 +452,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t13[i], end="")
         print()
         print(t14)
         print(t15)
@@ -481,7 +483,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t14[i], end="")
         print()
         print(t15)
         print(t16)
@@ -512,7 +514,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t15[i], end="")
         print()
         print(t16)
         print(t17)
@@ -543,7 +545,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t16[i], end="")
         print()
         print(t17)
         print(t18)
@@ -574,7 +576,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t17[i], end="")
         print()
         print(t18)
         print(t19)
@@ -605,7 +607,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t18[i], end="")
         print()
         print(t19)
         print(t20)
@@ -636,7 +638,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t19[i], end="")
         print()
         print(t20)
         print(t21)
@@ -667,7 +669,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t20[i], end="")
         print()
         print(t21)
         print(t22)
@@ -698,7 +700,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t21[i], end="")
         print()
         print(t22)
         print(t23)
@@ -729,7 +731,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t22[i], end="")
         print()
         print(t23)
         print(t24)
@@ -760,7 +762,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t23[i], end="")
         print()
         print(t24)
     if py==24:
@@ -791,7 +793,7 @@ while True:
             if i==px:
                 print("x",end="")
             else:
-                print(t4[i], end="")
+                print(t24[i], end="")
         print()    
     m=int(input("1.haut 2.bas 3.gauche 4.droite "))
     if m==1:
