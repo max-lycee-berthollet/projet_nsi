@@ -106,6 +106,7 @@ while True:
         for i in range(len(t4)):
             if i==px:
                 print("x", end="")
+        print()
         print(t4)
         print(t5)
         print(t6)
@@ -124,6 +125,7 @@ while True:
                 print("x",end="")
             else:
                 print(t4[i], end="")
+        print()
         print(t6)
         print(t7)
         print(t8)
@@ -141,6 +143,7 @@ while True:
                 print("x",end="")
             else:
                 print(t4[i], end="")
+        print()
         print(t7)
         print(t8)
         print(t9)
@@ -158,6 +161,7 @@ while True:
                 print("x",end="")
             else:
                 print(t4[i], end="")
+        print()
         print(t8)
         print(t9)
         print(t10)
@@ -175,6 +179,7 @@ while True:
                 print("x",end="")
             else:
                 print(t4[i], end="")
+        print()
         print(t9)
         print(t10)
         print(t11)
@@ -192,6 +197,7 @@ while True:
                 print("x",end="")
             else:
                 print(t4[i], end="")
+        print()
         print(t10)
         print(t11)
     if py==10:
@@ -209,6 +215,7 @@ while True:
                 print("x",end="")
             else:
                 print(t4[i], end="")
+        print()
         print(t11)
     if py==11:
         print(t1)
@@ -226,6 +233,7 @@ while True:
                 print("x",end="")
             else:
                 print(t4[i], end="")
+        print()
     m=int(input("1.haur 2.bas 3.gauche 4.droite "))
     if m==1:
         py-=1
