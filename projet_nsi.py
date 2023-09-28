@@ -806,3 +806,46 @@ while True:
         px+=2
     print()
 
+nb_pieces=0
+px=2
+py=15
+tresor=0
+
+if (px==2 and py==15) or \
+   (px==3 and py==21) or \
+   (px==8 and py==18) or \
+   (px==9 and py==25) or \
+   (px==9 and py==36) or \
+   (px==15 and py==10) or \
+   (px==17 and py==15) or \
+   (px==20 and py==9) or \
+   (px==23 and py==4) or \
+   (px==23 and py==33):
+    nb_pieces+=1
+if (px==13 and py==22) or \
+   (px==13 and py==23) or \
+   (px==13 and py==24):
+    tresor+=1
+
+if px==46 and py==6:
+    
+    sortir=input("bonjour jeune voyageur, souhaites tu sortir de ce labyrinthe ? oui/non ")
+    while sortir!="oui" and sortir!="non":
+        sortir=input("bonjour jeune voyageur, souhaites tu sortir de ce labyrinthe ? oui/non ")
+    if sortir=="oui":
+        print("Montre moi tes pieces...")
+        if nb_pieces >= 7 and tresor==1:
+            assez_de_piece=input(f"Tu possèdes {nb_pieces} pieces et {tresor} trésor. Souhaite tu me les echanger contre ta libertée ? oui/non ")
+            while assez_de_piece!= "oui" and assez_de_piece!="non":
+                assez_de_piece=input(f"Tu possèdes {nb_pieces} pieces et {tresor} trésor. Souhaite tu me les echanger contre ta libertée ? oui/non ")
+            if assez_de_piece=="oui":
+                print("C'est parfait tu es libre maintenant... \nBon voyage!!!")
+            elif assez_de_piece=="non":
+                print("C'est bien dommage, revient me voir quand tu aura envie de sortir d'ici")
+        elif nb_pieces < 7:
+            print(f"Tu possède {nb_pieces} pieces et {tresor} trésor. Tu n'en possède pas assez, reviens me voir quand tu aura au moins 7 piece et 1 trésor.")
+    if sortir=="non":
+        print("Tres bien, bon voyage à toi et reviens me voir si l'envie de sortir te prend. ")
+else:
+    print ("")
+
