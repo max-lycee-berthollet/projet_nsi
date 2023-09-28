@@ -36,10 +36,17 @@ print(labyrinthe)
 from math import *
 px= 1
 py= 1
-t1="|_  |_|  |"
-t2="| |_|    |"
-t3="| |___|  |"
-t4="| |_| |__|"
+t1=" _______ x _____________"
+t2="|  __   ___  |  ___   * |"
+t3="|__  | | |  ___|_____|  |"
+t4="|    |_  |*_|  __  |  __|"
+t5="|  |_ *|_  |  |* | | |*_|"
+t6="|__  |___| | |  __|_____|"
+t7="|   ___  |_  |____|     |"
+t8="|*_|   |_  |____   __|*_|"
+t9="|  __| |*|__     |___   |"
+t10="|  |  _|     _|*_|   |  |"
+t11="|*_|______|__|  ___|____|"
 while True:
     if py==1:
         for i in range(len(t1)):
@@ -49,8 +56,15 @@ while True:
                 print(t1[i], end="")
         print()
         print(t2)
-        print(t3)
+        print(t3)            ##boucle?
         print(t4)
+        print(t5)
+        print(t6)
+        print(t7)
+        print(t8)
+        print(t9)
+        print(t10)
+        print(t11)
     if py==2:
         print(t1)
         for i in range(len(t2)):
@@ -61,6 +75,13 @@ while True:
         print()
         print(t3)
         print(t4)
+        print(t5)
+        print(t6)
+        print(t7)
+        print(t8)
+        print(t9)
+        print(t10)
+        print(t11)
     if py==3:
         print(t1)
         print(t2)
@@ -71,6 +92,13 @@ while True:
                 print(t3[i], end="")
         print()
         print(t4)
+        print(t5)
+        print(t6)
+        print(t7)
+        print(t8)
+        print(t9)
+        print(t10)
+        print(t11)
     if py==4:
         print(t1)
         print(t2)
@@ -79,6 +107,13 @@ while True:
             if i==px:
                 print("x", end="")
         print(t4)
+        print(t5)
+        print(t6)
+        print(t7)
+        print(t8)
+        print(t9)
+        print(t10)
+        print(t11)
     if py==4:
         print(t1)
         print(t2)
@@ -88,6 +123,13 @@ while True:
                 print("x",end="")
             else:
                 print(t4[i], end="")
+        print(t5)
+        print(t6)
+        print(t7)
+        print(t8)
+        print(t9)
+        print(t10)
+        print(t11)
     m=int(input("1.haur 2.bas 3.gauche 4.droite "))
     if m==1:
         py-=1
