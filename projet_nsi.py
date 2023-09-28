@@ -795,14 +795,16 @@ while True:
             else:
                 print(t24[i], end="")
         print()    
-    m=int(input("1.haut 2.bas 3.gauche 4.droite "))
-    if m==1:
+    for i in range(1):
+        m=input("z.haut s.bas q.gauche d.droite ")
+        i+=1
+    if m=='z':
         py-=1
-    if m==2:
+    if m=='s':
         py+=1
-    if m==3:
+    if m=='q':
         px-=2
-    if m==4:
+    if m=='d':
         px+=2
     print()
 
