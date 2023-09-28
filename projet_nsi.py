@@ -1,3 +1,4 @@
+from time import *
 debut=input(f"voulez vous debuter le jeu ? oui/non ")
 while debut != "oui":
     debut=input(f"voulez vous debuter le jeu ? oui/non ")
@@ -9,7 +10,7 @@ Et voila vous connaissez les bases du jeu, à vous de prendre les bonnes descisi
 """)
 print(intro)
 difficulte=input("quelle difficulte vous correspond ? facile/difficile ")
-seconds = time.time()
+seconds = time()
 if difficulte == 'facile':
     while seconds < 360:
         print(seconds)
@@ -20,38 +21,64 @@ else:
         time.sleep(15)
 
 labyrinthe ="""
- _______ x _____________
-|  __   ___  |  ___   * |
-|__  | | |  ___|_____|  |
-|    |_  |*_|  __  |  __|
-|  |_ *|_  |  |* | | |*_|
-|__  |___| | |  __|_____|
-|   ___  |_  |____|     |
-|*_|   |_  |____   __|*_|
-|  __| |*|__     |___   |
-|  |  _|     _|*_|   |  |
-|*_|______|__|  ___|____|
+@@    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@              @@                         @@
+@@              @@                         @@
+@@    @@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@    @@
+@@    @                               @    @@
+@@    @                               @    @@
+@@    @    @@@@@@@@@@@@@@@@@@@@@@@    @    @@
+@@    @    @@         @         @@    @      
+@@    @    @@         @         @@    @      
+@@    @    @@   @@@@@@@@@@@@@   @@@@@@@    @@
+@@    @         @@         @@   @@    @    @@
+@@    @         @@         @@   @@    @    @@
+@@    @    @@   @@   $$$   @@   @@    @    @@
+@@    @    @@   @@         @@         @    @@
+@@    @    @@   @@         @@         @    @@
+@@    @@@@@@@   @@@@@   @@@@@   @@    @    @@
+@@    @    @@                   @@    @    @@
+@@    @    @@@@@@@@@@@@@@@@@@@@@@@    @    @@
+@@    @                               @    @@
+@@    @                               @    @@
+@@    @@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@    @@
+@@                         @@              @@
+@@                         @@              @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 """
 print(labyrinthe)
 from math import *
-px= 1
+px= 5
 py= 1
-t1=" _______ x _____________"
-t2="|  __   ___  |  ___   * |"
-t3="|__  | | |  ___|_____|  |"
-t4="|    |_  |*_|  __  |  __|"
-t5="|  |_ *|_  |  |* | | |*_|"
-t6="|__  |___| | |  __|_____|"
-t7="|   ___  |_  |____|     |"
-t8="|*_|   |_  |____   __|*_|"
-t9="|  __| |*|__     |___   |"
-t10="|  |  _|     _|*_|   |  |"
-t11="|*_|______|__|  ___|____|"
+t1="@@    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+t2="@@              @@                         @@"
+t3="@@              @@                         @@"
+t4="@@    @@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@    @@"
+t5="@@    @                               @    @@"
+t6="@@    @                               @    @@"
+t7="@@    @    @@@@@@@@@@@@@@@@@@@@@@@    @    @@"
+t8="@@    @    @@         @         @@    @      "
+t9="@@    @    @@         @         @@    @      "
+t10="@@    @    @@   @@@@@@@@@@@@@   @@@@@@@    @@"
+t11="@@    @         @@         @@   @@    @    @@"
+t12="@@    @         @@         @@   @@    @    @@"
+t13="@@    @    @@   @@   $$$   @@   @@    @    @@"
+t14="@@    @    @@   @@         @@         @    @@"
+t15="@@    @    @@   @@         @@         @    @@"
+t16="@@    @@@@@@@   @@@@@   @@@@@   @@    @    @@"
+t17="@@    @    @@                   @@    @    @@"
+t18="@@    @    @@@@@@@@@@@@@@@@@@@@@@@    @    @@"
+t19="@@    @                               @    @@"
+t20="@@    @                               @    @@"
+t21="@@    @@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@    @@"
+t22="@@                         @@              @@"
+t23="@@                         @@              @@"
+t24="@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 while True:
     if py==1:
         for i in range(len(t1)):
             if i == px:
-                print("x",end="")
+                print("`",end="")
             else:
                 print(t1[i], end="")
         print()
@@ -69,7 +96,7 @@ while True:
         print(t1)
         for i in range(len(t2)):
             if i == px:
-                print("x",end="")
+                print("`",end="")
             else:
                 print(t2[i], end="")
         print()
@@ -87,7 +114,7 @@ while True:
         print(t2)
         for i in range(len(t3)):
             if i==px:
-                print("x", end="")
+                print("`", end="")
             else:
                 print(t3[i], end="")
         print()
@@ -105,9 +132,8 @@ while True:
         print(t3)
         for i in range(len(t4)):
             if i==px:
-                print("x", end="")
+                print("`", end="")
         print()
-        print(t4)
         print(t5)
         print(t6)
         print(t7)
@@ -122,7 +148,7 @@ while True:
         print(t4)
         for i in range(len(t5)):
             if i==px:
-                print("x",end="")
+                print("`",end="")
             else:
                 print(t4[i], end="")
         print()
@@ -140,7 +166,7 @@ while True:
         print(t5)
         for i in range(len(t6)):
             if i==px:
-                print("x",end="")
+                print("`",end="")
             else:
                 print(t4[i], end="")
         print()
@@ -158,7 +184,7 @@ while True:
         print(t6)
         for i in range(len(t7)):
             if i==px:
-                print("x",end="")
+                print("`",end="")
             else:
                 print(t4[i], end="")
         print()
@@ -176,7 +202,7 @@ while True:
         print(t7)
         for i in range(len(t8)):
             if i==px:
-                print("x",end="")
+                print("`",end="")
             else:
                 print(t4[i], end="")
         print()
@@ -194,7 +220,7 @@ while True:
         print(t8)
         for i in range(len(t9)):
             if i==px:
-                print("x",end="")
+                print("`",end="")
             else:
                 print(t4[i], end="")
         print()
@@ -212,7 +238,7 @@ while True:
         print(t9)
         for i in range(len(t10)):
             if i==px:
-                print("x",end="")
+                print("`",end="")
             else:
                 print(t4[i], end="")
         print()
@@ -230,11 +256,11 @@ while True:
         print(t10)
         for i in range(len(t11)):
             if i==px:
-                print("x",end="")
+                print("`",end="")
             else:
                 print(t4[i], end="")
         print()
-    m=int(input("1.haur 2.bas 3.gauche 4.droite "))
+    m=int(input("1.haut 2.bas 3.gauche 4.droite "))
     if m==1:
         py-=1
     if m==2:
