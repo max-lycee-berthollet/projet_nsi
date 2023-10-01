@@ -49,32 +49,33 @@ else:
         time.sleep(15)
 
 from math import *
-px= 20
-py= 12
+px= 13
+py= 2
 t1="@@    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-t2="@@              @@                         @@"
-t3="@@              @@                         @@"
+t2="@@            o @@                         @@"
+t3="@@              @@  o                      @@"
 t4="@@    @@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@    @@"
 t5="@@    @                               @    @@"
 t6="@@    @                               @    @@"
 t7="@@    @    @@@@@@@@@@@@@@@@@@@@@@@    @    @@"
-t8="@@    @    @@         @         @@    @             "
-t9="@@    @    @@         @         @@    @    @@"
+t8="@@    @    @@    o    @         @@    @             "
+t9="@@    @    @@         @ o       @@  o @    @@"
 t10="@@    @    @@   @@@@@@@@@@@@@   @@@@@@@    @@"
 t11="@@    @         @@         @@   @@    @    @@"
 t12="@@    @         @@         @@   @@    @    @@"
 t13="@@    @    @@   @@   $$$   @@   @@    @    @@"
 t14="@@    @    @@   @@         @@         @    @@"
-t15="@@    @    @@   @@         @@         @    @@"
+t15="@@    @  o @@   @@         @@         @    @@"
 t16="@@    @@@@@@@   @@@@@   @@@@@   @@    @    @@"
-t17="@@    @    @@                   @@    @    @@"
+t17="@@    @    @@  o                @@    @    @@"
 t18="@@    @    @@@@@@@@@@@@@@@@@@@@@@@    @    @@"
 t19="@@    @                               @    @@"
-t20="@@    @                               @    @@"
+t20="@@    @  o                            @    @@"
 t21="@@    @@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@    @@"
 t22="@@                         @@              @@"
-t23="@@                         @@              @@"
+t23="@@  o                      @@     o        @@"
 t24="@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+nb_pieces=0
 while True:
     if py==1:
         for i in range(len(t1)):
@@ -816,12 +817,18 @@ while True:
             print("Tres bien, bon voyage à toi et reviens me voir si l'envie de sortir te prend. ")
     else:
         print ("")
+        
+    
+    if (py==2 and px==14) or (py==3 and px==20) or (py==8 and px==17) or (py==9 and px==24) or (py==9 and px==35) or (py==15 and px==9) or (py==17 and px==15) or (py==20 and px==9) or (py==23 and px==4) or (py==23 and px==34):
+        nb_pieces+=1
     tresor=0
     if (px==22 and py==13) or (px==21 and py==13) or (px==23 and py==13):
         tresor+=1
     if tresor == 1:
-        print(tresor)
-    print(px,py)
+        print('vous avez obtenu le trésor'))
+    if nb_pieces >= 1:
+        print('nombres de piece(s)',nb_pieces)
+
     m=input("z.haut s.bas q.gauche d.droite ")
 
     if m=='z':
@@ -834,25 +841,3 @@ while True:
         px+=1
     print()
     
-    
-
-nb_pieces=0
-px=2
-py=15
-
-if (px==2 and py==15) or \
-   (px==3 and py==21) or \
-   (px==8 and py==18) or \
-   (px==9 and py==25) or \
-   (px==9 and py==36) or \
-   (px==15 and py==10) or \
-   (px==17 and py==15) or \
-   (px==20 and py==9) or \
-   (px==23 and py==4) or \
-   (px==23 and py==33):
-    nb_pieces+=1
-if (px==13 and py==22) or \
-   (px==13 and py==23) or \
-   (px==13 and py==24):
-    tresor+=1
-
