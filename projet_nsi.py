@@ -1,24 +1,5 @@
 from time import *
 debut=input(f"voulez vous debuter le jeu ? oui/non ")
-while debut != "oui":
-    debut=input(f"voulez vous debuter le jeu ? oui/non ")
-intro=("""\nBienvenu dans le jeu du labyrinthe, les règles sont simples:
--des pieces sont disposés dans le labyrinthe, à vous de choisir de les rammaser ou non.
--vous devez rammasser entre 2 et 5 pieces par parties.
--vous devez sortir du labyrinthe avant la fin du temps imparti sous peine de ne plus  jamais en resortir.
-Et voila vous connaissez les bases du jeu, à vous de prendre les bonnes descisions.
-""")
-print(intro)
-difficulte=input("quelle difficulte vous correspond ? facile/difficile ")
-seconds = time()
-if difficulte == 'facile':
-    while seconds < 360:
-        print(seconds)
-        time.sleep(15)
-else:
-    while seconds < 240:
-        print(seconds)
-        time.sleep(15)
 
 labyrinthe ="""
 @@    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -47,9 +28,29 @@ labyrinthe ="""
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 """
 print(labyrinthe)
+while debut != "oui":
+    debut=input(f"voulez vous debuter le jeu ? oui/non ")
+intro=("""\nBienvenu dans le jeu du labyrinthe, les règles sont simples:
+-des pieces sont disposés dans le labyrinthe, à vous de choisir de les rammaser ou non.
+-vous devez rammasser entre 2 et 5 pieces par parties.
+-vous devez sortir du labyrinthe avant la fin du temps imparti sous peine de ne plus  jamais en resortir.
+Et voila vous connaissez les bases du jeu, à vous de prendre les bonnes descisions.
+""")
+print(intro)
+difficulte=input("quelle difficulte vous correspond ? facile/difficile ")
+seconds = time()
+if difficulte == 'facile':
+    while seconds < 360:
+        print(seconds)
+        time.sleep(15)
+else:
+    while seconds < 240:
+        print(seconds)
+        time.sleep(15)
+
 from math import *
-px= 4
-py= 1
+px= 20
+py= 12
 t1="@@    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 t2="@@              @@                         @@"
 t3="@@              @@                         @@"
@@ -57,8 +58,8 @@ t4="@@    @@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@    @@"
 t5="@@    @                               @    @@"
 t6="@@    @                               @    @@"
 t7="@@    @    @@@@@@@@@@@@@@@@@@@@@@@    @    @@"
-t8="@@    @    @@         @         @@    @         "
-t9="@@    @    @@         @         @@    @         "
+t8="@@    @    @@         @         @@    @             "
+t9="@@    @    @@         @         @@    @    @@"
 t10="@@    @    @@   @@@@@@@@@@@@@   @@@@@@@    @@"
 t11="@@    @         @@         @@   @@    @    @@"
 t12="@@    @         @@         @@   @@    @    @@"
@@ -794,24 +795,50 @@ while True:
                 print("x",end="")
             else:
                 print(t24[i], end="")
-        print()    
-    for i in range(1):
-        m=input("z.haut s.bas q.gauche d.droite ")
-        i+=1
+        print()
+    if (px==46 and py==8):
+        sortir=input("bonjour jeune voyageur, souhaites tu sortir de ce labyrinthe ? oui/non ")
+        while sortir!="oui" and sortir!="non":
+            sortir=input("bonjour jeune voyageur, souhaites tu sortir de ce labyrinthe ? oui/non ")
+        if sortir=="oui":
+            print("Montre moi tes pieces...")
+            if nb_pieces >= 7 and tresor==1:
+                assez_de_piece=input(f"Tu possèdes {nb_pieces} pieces et {tresor} trésor. Souhaite tu me les echanger contre ta libertée ? oui/non ")
+                while assez_de_piece!= "oui" and assez_de_piece!="non":
+                    assez_de_piece=input(f"Tu possèdes {nb_pieces} pieces et {tresor} trésor. Souhaite tu me les echanger contre ta libertée ? oui/non ")
+                if assez_de_piece=="oui":
+                    print("C'est parfait tu es libre maintenant... \nBon voyage!!!")
+                elif assez_de_piece=="non":
+                    print("C'est bien dommage, revient me voir quand tu aura envie de sortir d'ici")
+            elif nb_pieces < 7:
+                print(f"Tu possède {nb_pieces} pieces et {tresor} trésor. Tu n'en possède pas assez, reviens me voir quand tu aura au moins 7 piece et 1 trésor.")
+        if sortir=="non":
+            print("Tres bien, bon voyage à toi et reviens me voir si l'envie de sortir te prend. ")
+    else:
+        print ("")
+    tresor=0
+    if (px==22 and py==13) or (px==21 and py==13) or (px==23 and py==13):
+        tresor+=1
+    if tresor == 1:
+        print(tresor)
+    print(px,py)
+    m=input("z.haut s.bas q.gauche d.droite ")
+
     if m=='z':
         py-=1
     if m=='s':
         py+=1
     if m=='q':
-        px-=2
+        px-=1
     if m=='d':
-        px+=2
+        px+=1
     print()
+    
+    
 
 nb_pieces=0
 px=2
 py=15
-tresor=0
 
 if (px==2 and py==15) or \
    (px==3 and py==21) or \
@@ -829,24 +856,3 @@ if (px==13 and py==22) or \
    (px==13 and py==24):
     tresor+=1
 
-if px==46 and py==6:
-    
-    sortir=input("bonjour jeune voyageur, souhaites tu sortir de ce labyrinthe ? oui/non ")
-    while sortir!="oui" and sortir!="non":
-        sortir=input("bonjour jeune voyageur, souhaites tu sortir de ce labyrinthe ? oui/non ")
-    if sortir=="oui":
-        print("Montre moi tes pieces...")
-        if nb_pieces >= 7 and tresor==1:
-            assez_de_piece=input(f"Tu possèdes {nb_pieces} pieces et {tresor} trésor. Souhaite tu me les echanger contre ta libertée ? oui/non ")
-            while assez_de_piece!= "oui" and assez_de_piece!="non":
-                assez_de_piece=input(f"Tu possèdes {nb_pieces} pieces et {tresor} trésor. Souhaite tu me les echanger contre ta libertée ? oui/non ")
-            if assez_de_piece=="oui":
-                print("C'est parfait tu es libre maintenant... \nBon voyage!!!")
-            elif assez_de_piece=="non":
-                print("C'est bien dommage, revient me voir quand tu aura envie de sortir d'ici")
-        elif nb_pieces < 7:
-            print(f"Tu possède {nb_pieces} pieces et {tresor} trésor. Tu n'en possède pas assez, reviens me voir quand tu aura au moins 7 piece et 1 trésor.")
-    if sortir=="non":
-        print("Tres bien, bon voyage à toi et reviens me voir si l'envie de sortir te prend. ")
-else:
-    print ("")
