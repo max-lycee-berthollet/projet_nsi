@@ -1273,6 +1273,7 @@ if (px==1 and py==1) or \
    (px==24 and py==42) or \
    (px==24 and py==43) or \
    (px==24 and py==44) or \
-   (px==24 and py==45) or \
+   (px==24 and py==45):
+       goto px=1; py=4
 
 
