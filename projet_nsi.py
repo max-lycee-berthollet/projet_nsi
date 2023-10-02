@@ -33,8 +33,8 @@ while debut != "oui":
 intro=("""\nBienvenu dans le jeu du labyrinthe, les règles sont simples:
 -des pieces sont disposés dans le labyrinthe, à vous de choisir de les rammaser ou non.
 -vous devez rammasser entre 2 et 5 pieces par parties.
--attention si vous touchez un mur, vous mourez et retournez a la case de depart.
--vous devez sortir du labyrinthe avant la fin du temps imparti sous peine de ne plus  jamais en resortir.
+-attention a ne pas touchez les murs sinon vous mourez.
+-vous devez sortir du labyrinthe avant la fin du temps imparti sous peine de ne plus jamais en resortir.
 Et voila vous connaissez les bases du jeu, à vous de prendre les bonnes descisions.
 """)
 print(intro)
@@ -50,8 +50,8 @@ else:
         time.sleep(15)
 
 from math import *
-px= 13
-py= 2
+px= 4
+py= 1
 t1="@@    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 t2="@@            o @@                         @@"
 t3="@@              @@  o                      @@"
@@ -798,6 +798,18 @@ while True:
             else:
                 print(t24[i], end="")
         print()
+        
+        
+    if (py==2 and px==14) or (py==3 and px==20) or (py==8 and px==17) or (py==9 and px==24) or (py==9 and px==35) or (py==15 and px==9) or (py==17 and px==15) or (py==20 and px==9) or (py==23 and px==4) or (py==23 and px==34):
+        nb_pieces+=1
+    tresor=0
+    if (px==22 and py==13) or (px==21 and py==13) or (px==23 and py==13):
+        tresor+=1
+    if tresor == 1:
+        print('vous avez obtenu le trésor')
+    if nb_pieces >= 1:
+        print('nombres de piece(s)',nb_pieces)
+        
     if (px==46 and py==8):
         sortir=input("bonjour jeune voyageur, souhaites tu sortir de ce labyrinthe ? oui/non ")
         while sortir!="oui" and sortir!="non":
@@ -820,15 +832,7 @@ while True:
         print ("")
         
     
-    if (py==2 and px==14) or (py==3 and px==20) or (py==8 and px==17) or (py==9 and px==24) or (py==9 and px==35) or (py==15 and px==9) or (py==17 and px==15) or (py==20 and px==9) or (py==23 and px==4) or (py==23 and px==34):
-        nb_pieces+=1
-    tresor=0
-    if (px==22 and py==13) or (px==21 and py==13) or (px==23 and py==13):
-        tresor+=1
-    if tresor == 1:
-        print('vous avez obtenu le trésor'))
-    if nb_pieces >= 1:
-        print('nombres de piece(s)',nb_pieces)
+    
 
     m=input("z.haut s.bas q.gauche d.droite ")
 
@@ -885,23 +889,18 @@ if (px==1 and py==1) or \
    (px==1 and py==43) or \
    (px==1 and py==44) or \
    (px==1 and py==45) or \
-
    (px==2 and py==1) or \
    (px==2 and py==2) or \
    (px==2 and py==17) or \
    (px==2 and py==18) or \
    (px==2 and py==44) or \
    (px==2 and py==45) or \
-
-
    (px==3 and py==1) or \
    (px==3 and py==2) or \
    (px==3 and py==17) or \
    (px==3 and py==18) or \
    (px==3 and py==44) or \
    (px==3 and py==45) or \
-
-
    (px==4 and py==1) or \
    (px==4 and py==2) or \
    (px==4 and py==7) or \
@@ -936,23 +935,18 @@ if (px==1 and py==1) or \
    (px==4 and py==39) or \
    (px==4 and py==44) or \
    (px==4 and py==45) or \
-
-
    (px==5 and py==1) or \
    (px==5 and py==2) or \
    (px==5 and py==7) or \
    (px==5 and py==39) or \
    (px==5 and py==44) or \
    (px==5 and py==45) or \
-
-
    (px==6 and py==1) or \
    (px==6 and py==2) or \
    (px==6 and py==7) or \
    (px==6 and py==39) or \
    (px==6 and py==44) or \
    (px==6 and py==45) or \
-
    (px==7 and py==1) or \
    (px==7 and py==2) or \
    (px==7 and py==7) or \
@@ -982,7 +976,6 @@ if (px==1 and py==1) or \
    (px==7 and py==39) or \
    (px==7 and py==44) or \
    (px==7 and py==45) or \
-
    (px==8 and py==1) or \
    (px==8 and py==2) or \
    (px==8 and py==7) or \
@@ -992,7 +985,6 @@ if (px==1 and py==1) or \
    (px==8 and py==33) or \
    (px==8 and py==34) or \
    (px==8 and py==39) or \
-
    (px==9 and py==1) or \
    (px==9 and py==2) or \
    (px==9 and py==7) or \
@@ -1002,7 +994,6 @@ if (px==1 and py==1) or \
    (px==9 and py==33) or \
    (px==9 and py==34) or \
    (px==9 and py==39) or \
-
    (px==10 and py==1) or \
    (px==10 and py==2) or \
    (px==10 and py==7) or \
@@ -1033,7 +1024,6 @@ if (px==1 and py==1) or \
    (px==10 and py==39) or \
    (px==10 and py==44) or \
    (px==10 and py==45) or \
-
    (px==11 and py==1) or \
    (px==11 and py==2) or \
    (px==11 and py==7) or \
@@ -1046,7 +1036,6 @@ if (px==1 and py==1) or \
    (px==11 and py==39) or \
    (px==11 and py==44) or \
    (px==11 and py==45) or \
-
    (px==12 and py==1) or \
    (px==12 and py==2) or \
    (px==12 and py==7) or \
@@ -1059,7 +1048,6 @@ if (px==1 and py==1) or \
    (px==12 and py==39) or \
    (px==12 and py==44) or \
    (px==12 and py==45) or \
-
    (px==13 and py==1) or \
    (px==13 and py==2) or \
    (px==13 and py==7) or \
@@ -1074,7 +1062,6 @@ if (px==1 and py==1) or \
    (px==13 and py==39) or \
    (px==13 and py==44) or \
    (px==13 and py==45) or \
-
    (px==14 and py==1) or \
    (px==14 and py==2) or \
    (px==14 and py==7) or \
@@ -1087,7 +1074,6 @@ if (px==1 and py==1) or \
    (px==14 and py==39) or \
    (px==14 and py==44) or \
    (px==14 and py==45) or \
-
    (px==15 and py==1) or \
    (px==15 and py==2) or \
    (px==15 and py==7) or \
@@ -1100,7 +1086,6 @@ if (px==1 and py==1) or \
    (px==15 and py==39) or \
    (px==15 and py==44) or \
    (px==15 and py==45) or \
-
    (px==16 and py==1) or \
    (px==16 and py==2) or \
    (px==16 and py==7) or \
@@ -1125,7 +1110,6 @@ if (px==1 and py==1) or \
    (px==16 and py==39) or \
    (px==16 and py==44) or \
    (px==16 and py==45) or \
-
    (px==17 and py==1) or \
    (px==17 and py==2) or \
    (px==17 and py==7) or \
@@ -1136,7 +1120,6 @@ if (px==1 and py==1) or \
    (px==17 and py==39) or \
    (px==17 and py==44) or \
    (px==17 and py==45) or \
-
    (px==18 and py==1) or \
    (px==18 and py==2) or \
    (px==18 and py==7) or \
@@ -1166,21 +1149,18 @@ if (px==1 and py==1) or \
    (px==18 and py==39) or \
    (px==18 and py==44) or \
    (px==18 and py==45) or \
-
    (px==19 and py==1) or \
    (px==19 and py==2) or \
    (px==19 and py==7) or \
    (px==19 and py==39) or \
    (px==19 and py==44) or \
    (px==19 and py==45) or \
-
    (px==20 and py==1) or \
    (px==20 and py==2) or \
    (px==20 and py==7) or \
    (px==20 and py==39) or \
    (px==20 and py==44) or \
    (px==20 and py==45) or \
-
    (px==21 and py==1) or \
    (px==21 and py==2) or \
    (px==21 and py==7) or \
@@ -1215,21 +1195,18 @@ if (px==1 and py==1) or \
    (px==21 and py==39) or \
    (px==21 and py==44) or \
    (px==21 and py==45) or \
-
    (px==22 and py==1) or \
    (px==22 and py==2) or \
    (px==22 and py==28) or \
    (px==22 and py==29) or \
    (px==22 and py==44) or \
    (px==22 and py==45) or \
-
    (px==23 and py==1) or \
    (px==23 and py==2) or \
    (px==23 and py==28) or \
    (px==23 and py==29) or \
    (px==23 and py==44) or \
    (px==23 and py==45) or \
-
    (px==24 and py==1) or \
    (px==24 and py==2) or \
    (px==24 and py==3) or \
@@ -1275,6 +1252,4 @@ if (px==1 and py==1) or \
    (px==24 and py==43) or \
    (px==24 and py==44) or \
    (px==24 and py==45):
-       goto px=1; py=4
-
-
+       px==1; py==4
