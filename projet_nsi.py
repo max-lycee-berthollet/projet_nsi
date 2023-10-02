@@ -33,6 +33,7 @@ while debut != "oui":
 intro=("""\nBienvenu dans le jeu du labyrinthe, les règles sont simples:
 -des pieces sont disposés dans le labyrinthe, à vous de choisir de les rammaser ou non.
 -vous devez rammasser entre 2 et 5 pieces par parties.
+-attention si vous touchez un mur, vous mourez et retournez a la case de depart.
 -vous devez sortir du labyrinthe avant la fin du temps imparti sous peine de ne plus  jamais en resortir.
 Et voila vous connaissez les bases du jeu, à vous de prendre les bonnes descisions.
 """)
