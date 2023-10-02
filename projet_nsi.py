@@ -841,9 +841,7 @@ while True:
         px+=1
     print()
 
-
-
-#c'est les murs et on met a la bonne place plus tard
+#c'est la place des murs pour ensuite pouvoir faire en sorte que quand le personnage rentre dans un mur il retourne au debut 
 
 if (px==1 and py==1) or \
    (px==1 and py==2) or \
@@ -1048,8 +1046,233 @@ if (px==1 and py==1) or \
    (px==11 and py==44) or \
    (px==11 and py==45) or \
 
-   (px==1 and py==1) or \
-   (px==1 and py==1) or \
-   (px==20 and py==9) or \
-   (px==23 and py==4) or \
-   (px==23 and py==33):   
+   (px==12 and py==1) or \
+   (px==12 and py==2) or \
+   (px==12 and py==7) or \
+   (px==12 and py==17) or \
+   (px==12 and py==18) or \
+   (px==12 and py==28) or \
+   (px==12 and py==29) or \
+   (px==12 and py==33) or \
+   (px==12 and py==34) or \
+   (px==12 and py==39) or \
+   (px==12 and py==44) or \
+   (px==12 and py==45) or \
+
+   (px==13 and py==1) or \
+   (px==13 and py==2) or \
+   (px==13 and py==7) or \
+   (px==13 and py==12) or \
+   (px==13 and py==13) or \
+   (px==13 and py==17) or \
+   (px==13 and py==18) or \
+   (px==13 and py==28) or \
+   (px==13 and py==29) or \
+   (px==13 and py==33) or \
+   (px==13 and py==34) or \
+   (px==13 and py==39) or \
+   (px==13 and py==44) or \
+   (px==13 and py==45) or \
+
+   (px==14 and py==1) or \
+   (px==14 and py==2) or \
+   (px==14 and py==7) or \
+   (px==14 and py==12) or \
+   (px==14 and py==13) or \
+   (px==14 and py==17) or \
+   (px==14 and py==18) or \
+   (px==14 and py==28) or \
+   (px==14 and py==29) or \
+   (px==14 and py==39) or \
+   (px==14 and py==44) or \
+   (px==14 and py==45) or \
+
+   (px==15 and py==1) or \
+   (px==15 and py==2) or \
+   (px==15 and py==7) or \
+   (px==15 and py==12) or \
+   (px==15 and py==13) or \
+   (px==15 and py==17) or \
+   (px==15 and py==18) or \
+   (px==15 and py==28) or \
+   (px==15 and py==29) or \
+   (px==15 and py==39) or \
+   (px==15 and py==44) or \
+   (px==15 and py==45) or \
+
+   (px==16 and py==1) or \
+   (px==16 and py==2) or \
+   (px==16 and py==7) or \
+   (px==16 and py==8) or \
+   (px==16 and py==9) or \
+   (px==16 and py==10) or \
+   (px==16 and py==11) or \
+   (px==16 and py==12) or \
+   (px==16 and py==13) or \
+   (px==16 and py==17) or \
+   (px==16 and py==18) or \
+   (px==16 and py==19) or \
+   (px==16 and py==20) or \
+   (px==16 and py==21) or \
+   (px==16 and py==25) or \
+   (px==16 and py==26) or \
+   (px==16 and py==27) or \
+   (px==16 and py==28) or \
+   (px==16 and py==29) or \
+   (px==16 and py==33) or \
+   (px==16 and py==34) or \
+   (px==16 and py==39) or \
+   (px==16 and py==44) or \
+   (px==16 and py==45) or \
+
+   (px==17 and py==1) or \
+   (px==17 and py==2) or \
+   (px==17 and py==7) or \
+   (px==17 and py==12) or \
+   (px==17 and py==13) or \
+   (px==17 and py==33) or \
+   (px==17 and py==34) or \
+   (px==17 and py==39) or \
+   (px==17 and py==44) or \
+   (px==17 and py==45) or \
+
+   (px==18 and py==1) or \
+   (px==18 and py==2) or \
+   (px==18 and py==7) or \
+   (px==18 and py==12) or \
+   (px==18 and py==13) or \
+   (px==18 and py==14) or \
+   (px==18 and py==15) or \
+   (px==18 and py==16) or \
+   (px==18 and py==17) or \
+   (px==18 and py==18) or \
+   (px==18 and py==19) or \
+   (px==18 and py==20) or \
+   (px==18 and py==21) or \
+   (px==18 and py==22) or \
+   (px==18 and py==23) or \
+   (px==18 and py==24) or \
+   (px==18 and py==25) or \
+   (px==18 and py==26) or \
+   (px==18 and py==27) or \
+   (px==18 and py==28) or \
+   (px==18 and py==29) or \
+   (px==18 and py==30) or \
+   (px==18 and py==31) or \
+   (px==18 and py==32) or \
+   (px==18 and py==33) or \
+   (px==18 and py==34) or \
+   (px==18 and py==39) or \
+   (px==18 and py==44) or \
+   (px==18 and py==45) or \
+
+   (px==19 and py==1) or \
+   (px==19 and py==2) or \
+   (px==19 and py==7) or \
+   (px==19 and py==39) or \
+   (px==19 and py==44) or \
+   (px==19 and py==45) or \
+
+   (px==20 and py==1) or \
+   (px==20 and py==2) or \
+   (px==20 and py==7) or \
+   (px==20 and py==39) or \
+   (px==20 and py==44) or \
+   (px==20 and py==45) or \
+
+   (px==21 and py==1) or \
+   (px==21 and py==2) or \
+   (px==21 and py==7) or \
+   (px==21 and py==8) or \
+   (px==21 and py==9) or \
+   (px==21 and py==10) or \
+   (px==21 and py==11) or \
+   (px==21 and py==12) or \
+   (px==21 and py==13) or \
+   (px==21 and py==17) or \
+   (px==21 and py==18) or \
+   (px==21 and py==19) or \
+   (px==21 and py==20) or \
+   (px==21 and py==21) or \
+   (px==21 and py==22) or \
+   (px==21 and py==23) or \
+   (px==21 and py==24) or \
+   (px==21 and py==25) or \
+   (px==21 and py==26) or \
+   (px==21 and py==27) or \
+   (px==21 and py==28) or \
+   (px==21 and py==29) or \
+   (px==21 and py==30) or \
+   (px==21 and py==31) or \
+   (px==21 and py==32) or \
+   (px==21 and py==33) or \
+   (px==21 and py==34) or \
+   (px==21 and py==35) or \
+   (px==21 and py==36) or \
+   (px==21 and py==37) or \
+   (px==21 and py==38) or \
+   (px==21 and py==39) or \
+   (px==21 and py==44) or \
+   (px==21 and py==45) or \
+
+   (px==22 and py==1) or \
+   (px==22 and py==2) or \
+   (px==22 and py==28) or \
+   (px==22 and py==29) or \
+   (px==22 and py==44) or \
+   (px==22 and py==45) or \
+
+   (px==23 and py==1) or \
+   (px==23 and py==2) or \
+   (px==23 and py==28) or \
+   (px==23 and py==29) or \
+   (px==23 and py==44) or \
+   (px==23 and py==45) or \
+
+   (px==24 and py==1) or \
+   (px==24 and py==2) or \
+   (px==24 and py==3) or \
+   (px==24 and py==4) or \
+   (px==24 and py==5) or \
+   (px==24 and py==6) or \
+   (px==24 and py==7) or \
+   (px==24 and py==8) or \
+   (px==24 and py==9) or \
+   (px==24 and py==10) or \
+   (px==24 and py==11) or \
+   (px==24 and py==12) or \
+   (px==24 and py==13) or \
+   (px==24 and py==14) or \
+   (px==24 and py==15) or \
+   (px==24 and py==16) or \
+   (px==24 and py==17) or \
+   (px==24 and py==18) or \
+   (px==24 and py==19) or \
+   (px==24 and py==20) or \
+   (px==24 and py==21) or \
+   (px==24 and py==22) or \
+   (px==24 and py==23) or \
+   (px==24 and py==24) or \
+   (px==24 and py==25) or \
+   (px==24 and py==26) or \
+   (px==24 and py==27) or \
+   (px==24 and py==28) or \
+   (px==24 and py==29) or \
+   (px==24 and py==30) or \
+   (px==24 and py==31) or \
+   (px==24 and py==32) or \
+   (px==24 and py==33) or \
+   (px==24 and py==34) or \
+   (px==24 and py==35) or \
+   (px==24 and py==36) or \
+   (px==24 and py==37) or \
+   (px==24 and py==38) or \
+   (px==24 and py==39) or \
+   (px==24 and py==40) or \
+   (px==24 and py==41) or \
+   (px==24 and py==42) or \
+   (px==24 and py==43) or \
+   (px==24 and py==44) or \
+   (px==24 and py==45) or \
+
+
