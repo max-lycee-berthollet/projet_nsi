@@ -834,17 +834,17 @@ while True:
     
     
 
-    m=input("z.haut s.bas q.gauche d.droite ")
-
-    if m=='z':
-        py-=1
-    if m=='s':
-        py+=1
-    if m=='q':
-        px-=1
-    if m=='d':
-        px+=1
-    print()
+    if (px!=46 and py!=8):
+        m=input("z.haut s.bas q.gauche d.droite ")
+        if m=='z':
+            py-=1
+        if m=='s':
+            py+=1
+        if m=='q':
+            px-=1
+        if m=='d':
+            px+=1
+        print()
 
 #c'est la place des murs pour ensuite pouvoir faire en sorte que quand le personnage rentre dans un mur il retourne au debut 
 
