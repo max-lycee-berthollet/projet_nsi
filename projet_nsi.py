@@ -77,6 +77,7 @@ t22="@@                         @@              @@"
 t23="@@  o                      @@     o        @@"
 t24="@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 nb_pieces=0
+tresor=0
 while True:
     if py==1:
         for i in range(len(t1)):
@@ -802,7 +803,7 @@ while True:
         
     if (py==2 and px==14) or (py==3 and px==20) or (py==8 and px==17) or (py==9 and px==24) or (py==9 and px==35) or (py==15 and px==9) or (py==17 and px==15) or (py==20 and px==9) or (py==23 and px==4) or (py==23 and px==34):
         nb_pieces+=1
-    tresor=0
+    
     if (px==22 and py==13) or (px==21 and py==13) or (px==23 and py==13):
         tresor+=1
     if tresor == 1:
@@ -834,7 +835,7 @@ while True:
     
     
 
-    if (px!=46 and py!=8):
+    if (px!=46 or py!=8):
         m=input("z.haut s.bas q.gauche d.droite ")
         if m=='z':
             py-=1
@@ -1253,3 +1254,4 @@ if (px==1 and py==1) or \
    (px==24 and py==44) or \
    (px==24 and py==45):
        px==1; py==4
+       
